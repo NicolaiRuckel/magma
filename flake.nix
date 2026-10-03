@@ -29,8 +29,6 @@
             pkg-config
 
             vulkan-headers
-            vulkan-validation-layers
-            vulkan-loader
 
             wayland
             libxkbcommon
