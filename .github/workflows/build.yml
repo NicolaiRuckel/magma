@@ -28,5 +28,4 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Build
-        run: nix develop -c env PATH="$(/nix/var/nix/profiles/default/bin/nix --version >/dev/null; echo /nix/var/nix/profiles/default/bin:/usr/bin:/bin)" cargo build
-
+        run: nix develop -c env PATH="$(/nix/var/nix/profiles/default/bin/nix --version >/dev/null; echo /nix/var/nix/profiles/default/bin:/usr/bin:/bin)" cargo build --verbose --color always
